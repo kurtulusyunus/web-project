@@ -1,0 +1,12 @@
+.profile-photo {
+    border-radius: 50%;
+    width: 30%;
+    min-width: 300px;
+  }
+  
+  .profile-letter {
+    word-wrap: break-word;
+    position: relative;
+    max-width: 543px;
+    margin: 0 auto 0;
+  }
