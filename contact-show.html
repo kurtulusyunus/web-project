@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>İlgi Alanlarım</title>
+    <title>Şehrim</title>
     <link rel="stylesheet" href="./css/styles.css" />
     <!-- Bootstrap CSS -->
     <link
@@ -40,10 +40,10 @@
               <a href="#" class="nav-link">Eğitim</a>
             </li>
             <li class="nav-item">
-              <a href="city.html" class="nav-link">Şehrim</a>
+              <a href="city.html" class="nav-link" >Şehrim</a>
             </li>
             <li class="nav-item">
-              <a href="interest.html" class="nav-link active" aria-current="page">İlgi Alanlarım</a>
+              <a href="interest.html" class="nav-link">İlgi Alanlarım</a>
             </li>
             <li class="nav-item">
               <a href="contact.html" class="nav-link">İletişim</a>
@@ -54,69 +54,33 @@
           </ul>
         </header>
     </div>
-    <section class="container main">
-        <div class="text-center m-5">
-          <img id="logo" src="" alt="Beşiktaş" />
-          <h1 id="name"></h1>
-          <table class="table table-striped table-hover">
-            <thead>
-              <tr>
-                <th scope="col">Oynanan Maç</th>
-                <th scope="col">Galibiyet</th>
-                <th scope="col">Beraberlik</th>
-                <th scope="col">Yenilgi</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row" id="total"></th>
-                <td id="wins"></td>
-                <td id="draws"></td>
-                <td id="loses"></td>
-              </tr>
-            </tbody>
-          </table>
-          <div class="card-group">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Atılan Gol</h5>
-              </div>
-              <div class="card-footer">
-                <h3 id="goals-for"></h3>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Yenilen Gol</h5>
-              </div>
-              <div class="card-footer">
-                <h3 id="goals-against"></h3>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">İptal Edilen Gol</h5>
-              </div>
-              <div class="card-footer">
-                <h3 id="failed-to-score"></h3>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Evinde En Çok Attığı Gol</h5>
-              </div>
-              <div class="card-footer">
-                <h3 id="biggest-goals-for-home"></h3>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Deplasmanda En Çok Attığı Gol</h5>
-              </div>
-              <div class="card-footer">
-                <h3 id="biggest-goals-for-away"></h3>
-              </div>
-            </div>
+    <section class="container">
+        <div class="card">
+          <h5 class="card-header">İletişim Bilgileriniz</h5>
+          <div class="card-body">
+            <h5 class="card-title">Adınız</h5>
+            <p class="card-text" id="firstName"></p>
+  
+            <h5 class="card-title">Soyadınız</h5>
+            <p class="card-text" id="lastName"></p>
+  
+            <h5 class="card-title">Email</h5>
+            <p class="card-text" id="email"></p>
+  
+            <h5 class="card-title">Şifreniz</h5>
+            <p class="card-text" id="password"></p>
+  
+            <h5 class="card-title">Cinsiyetiniz</h5>
+            <p class="card-text" id="gender"></p>
+  
+            <h5 class="card-title">İlgi Alanlarınız</h5>
+            <p class="card-text" id="interests"></p>
+  
+            <h5 class="card-title">Şehriniz</h5>
+            <p class="card-text" id="city"></p>
+  
+            <h5 class="card-title">Mesajınız</h5>
+            <p class="card-text" id="message"></p>
           </div>
         </div>
       </section>
@@ -149,5 +113,5 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"
       ></script>
-      <script src="./js/interest.js"></script>
+      <script src="./js/contact-show.js"></script>
   </body>
