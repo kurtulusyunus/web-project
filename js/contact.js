@@ -27,7 +27,7 @@ function chooseGender() {
   if (document.getElementById("genderMale").checked) {
     gender = "Erkek";
   } else {
-    gender = "KadÄ±n";
+    gender = "Kadın";
   }
 }
 
@@ -48,4 +48,47 @@ function chooseInterest() {
   if (document.getElementById("interestBilliard").checked == true) {
     interests.push(document.getElementById("interestBilliard").value);
   }
+}
+
+function validate() {
+  if (firstName.value == "") {
+    alert("Lütfen giriş yapmak için İsminizi giriniz!");
+    firstName.focus();
+    return false;
+  }
+  if (lastName.value == "") {
+    alert("Lütfen giriş yapmak için Soyisminizi giriniz!");
+    lastName.focus();
+    return false;
+  }
+  if (email.value == "") {
+    alert("Lütfen giriş yapmak için emailinizi giriniz!");
+    email.focus();
+    return false;
+  } else {
+    var email_format =/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    if (!email.value.match(email_format)) {
+      alert("Lütfen email formatını doğru giriniz!");
+      email.focus();
+      return false;
+    }
+  }
+
+  if (password.value == "") {
+    alert("Lütfen giriş yapmak için şifrenizi giriniz!");
+    password.focus();
+    return false;
+  }
+  if (citySelect.value == "Seçiniz") {
+    alert("Lütfen giriş yapmak için şehrinizi seçiniz!");
+    citySelect.focus();
+    return false;
+  }
+  if (message.value == "") {
+    alert("Lütfen giriş yapmak için mesajınızı giriniz!");
+    message.focus();
+    return false;
+  }
+
+  getFormData();
 }
