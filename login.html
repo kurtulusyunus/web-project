@@ -54,7 +54,50 @@
           </ul>
         </header>
     </div>
+    <div
+    class="row align-items-center justify-content-center"
+    style="min-height: 75vh"
+  >
+    <form
+      class="col-md-3"
+      action="login.php"
+      method="post"
+      name="loginForm"
+    >
+      <div class="text-center">
+        <i class="fa-solid fa-right-to-bracket fa-4x mb-4 text-warning"></i>
+        <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+      </div>
 
+      <div class="form-floating mb-2">
+        <input
+          type="email"
+          class="form-control"
+          id="email"
+          name="email"
+          placeholder="name@example.com"
+        />
+        <label for="email">Email address</label>
+      </div>
+      <div class="form-floating">
+        <input
+          type="password"
+          class="form-control"
+          id="password"
+          name="password"
+          placeholder="Password"
+        />
+        <label for="password">Password</label>
+      </div>
+      <input
+        class="w-100 btn btn-lg btn-primary mt-3"
+        type="submit"
+        name="submit"
+        value="Sign In"
+        onclick="validate()"
+      />
+    </form>
+  </div>
     <div class="container">
         <footer class="py-3 my-4">
           <ul class="nav justify-content-center border-bottom pb-3 mb-3">
@@ -84,4 +127,5 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"
       ></script>
+      <script src="./js/login.js"></script>
   </body>
