@@ -52,17 +52,17 @@ function chooseInterest() {
 
 function validate() {
   if (firstName.value == "") {
-    alert("Lütfen giriş yapmak için İsminizi giriniz!");
+    alert("Lütfen İsminizi giriniz!");
     firstName.focus();
     return false;
   }
   if (lastName.value == "") {
-    alert("Lütfen giriş yapmak için Soyisminizi giriniz!");
+    alert("Lütfen Soyisminizi giriniz!");
     lastName.focus();
     return false;
   }
   if (email.value == "") {
-    alert("Lütfen giriş yapmak için emailinizi giriniz!");
+    alert("Lütfen emailinizi giriniz!");
     email.focus();
     return false;
   } else {
@@ -75,17 +75,17 @@ function validate() {
   }
 
   if (password.value == "") {
-    alert("Lütfen giriş yapmak için şifrenizi giriniz!");
+    alert("Lütfen şifrenizi giriniz!");
     password.focus();
     return false;
   }
   if (citySelect.value == "Seçiniz") {
-    alert("Lütfen giriş yapmak için şehrinizi seçiniz!");
+    alert("Lütfen şehrinizi seçiniz!");
     citySelect.focus();
     return false;
   }
   if (message.value == "") {
-    alert("Lütfen giriş yapmak için mesajınızı giriniz!");
+    alert("Lütfen mesajınızı giriniz!");
     message.focus();
     return false;
   }

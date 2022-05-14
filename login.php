@@ -55,7 +55,7 @@
 
       <div
         class="row align-items-center justify-content-center"
-        style="min-height: 50vh"
+        style="min-height: 75vh"
       >
       <h1 class="text-center bg-success py-3 rounded">Hoşgeldiniz 
       <?php 
